@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="caudill.css">
+  <title>New Student</title>
+ </head>
+ <body>
+   <form action="signUp.php" method="post">
+    <legend>New Account</legend>
+	<fieldset id="account" >
+	 <div class="col-6">
+	  <p><label>First Name: </label><input type="text" name="fname" placeholder="First Name" required minlength="3" autofocus /></p>
+	  <p><label>Last Name: </label><input type="text" name="lname" placeholder="Last Name" required minlength="3" /></p>
+	  <p><label>Birthdate: </label><input id="bday" type="datetime" name="bday" placeholder="01/01/1980" required /></P>
+	  <p><label>Phone Number: </label><input type="text" name="phone" placeholder="(xxx)xxx-xxxx" />
+         <label><input type="checkbox" name="text#" value="1" /> Can receive text</label></p>                                 	  
+	  <label>Gender: </label><label><input type="radio" name="gender" value="male" />Male</label>
+	                         <label><input type="radio" name="gender" value="female" />Female</label><br/><br/>
+	  <label>I am: </label><label><input id="AH" type="radio" name="studentT" value="1" />Account Holder</label>
+						   <label><input id="BT" type="radio" name="studentT" value="2" />Both a student and an account holder</label><br/>
+	 </div>
+	 <div class="col-6">
+	   <p><label>Address: </label><input type="text" name="address" placeholder="123 Steet Name" required /></p>
+	   <p><label>City: </label><input type="text" name="city" placeholder="Warsaw" required /></p>
+	   <p><label>State: </label><input type="text" name="state" default="IN" minlength="2" maxlength="2" required /></p>
+	   <p><label>Zipcode: </label><input type="text" name="zip" placeholder ="46580" minlength="5" maxlength="5" required /></p>
+	   <p><label>Email: </label><input type="email" name="email" placeholder="email@place.com" required /></p>
+	 </div>
+	</fieldset>
+	<fieldset id="buttons">
+	 <label class="col-3" for="numPeople">Number of additional people on account</label>
+	 <select class="col-1" id="numPeople" name="numPeople">
+	   <option value="0">None</option>
+	   <option value="1">One</option>
+	   <option value="2">Two</option>
+	   <option value="3">Three</option>
+	   <option value="4">Four</option>
+	   <option value="5">Five</option>
+	   <option value="6">Six</option>
+	 </select>
+	 <input class="col-4" type="reset" value="Clear Form">
+	 <input class="col-4" type="submit" value="Next">
+	</fieldset>
+   </form>
+ </body>
+</html>
